@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("fondo.jpg");
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
     background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
@@ -8,12 +8,10 @@ body{
     overflow: hidden; /* Evita barras de desplazamiento si la imagen es más grande que el viewport */
 }
 
-
-
-h1{
+h1 {
     color: #ffffff;
-    font-size:100px;
-    text-align:center;
+    font-size: 100px;
+    text-align: center;
 }
 
 .nav-links {
@@ -37,36 +35,46 @@ h1{
     margin: 0 auto; /* Centra el enlace en medio de los otros dos */
 }
 
-
-
-
 .parrafo-proyecto {
     font-size: 24px; /* Tamaño del texto */
-    color: #b8ade0; /* Color del texto */
+    color: #c41f1f; /* Color del texto */
     line-height: 1.5; /* Altura de línea para mejorar legibilidad */
     margin-top: 20px; /* Margen superior */
-    text-align:center;
+    text-align: center;
     font-weight: bold;
 }
 
-
-#demo{
+#demo {
     font-size: 80px;
-    color:red;
+    color: red;
     text-align: center;
-
-
 }
 
+/* Adaptabilidad para pantallas pequeñas (dispositivos móviles) */
 @media (max-width: 768px) {
-    /* Estilos específicos para pantallas más pequeñas */
     body {
-        background-position: center top; /* Ajuste opcional para dispositivos móviles */
+        background-position: center top; /* Ajuste para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 50px; /* Reducir el tamaño del título en móviles */
+    }
+
+    #demo {
+        font-size: 40px; /* Reducir el tamaño del contador en móviles */
+    }
+
+    .nav-links a {
+        font-size: 20px; /* Reducir el tamaño de los enlaces en móviles */
+    }
+
+    .parrafo-proyecto {
+        font-size: 18px; /* Reducir el tamaño del texto del párrafo en móviles */
     }
 }
 
+/* Estilos para pantallas grandes (laptops, desktops) */
 @media (min-width: 769px) {
-    /* Estilos para pantallas grandes */
     body {
         background-position: center center; /* Mantén el centro en pantallas grandes */
     }
