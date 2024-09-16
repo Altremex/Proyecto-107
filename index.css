@@ -1,0 +1,81 @@
+body {
+    background-image: url("fondo.jpg");
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina márgenes para que la imagen cubra todo el viewport */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    overflow: auto; /* Evita barras de desplazamiento si la imagen es más grande que el viewport */
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between; /* Distribuye los enlaces a los extremos */
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffda0b;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links .center {
+    margin: 0 auto; /* Centra el enlace en medio de los otros dos */
+}
+
+.parrafo-proyecto {
+    font-size: 24px; /* Tamaño del texto */
+    color: #c41f1f; /* Color del texto */
+    line-height: 1.5; /* Altura de línea para mejorar legibilidad */
+    margin-top: 20px; /* Margen superior */
+    text-align: center;
+    font-weight: bold;
+}
+
+#demo {
+    font-size: 80px;
+    color: red;
+    text-align: center;
+}
+
+/* Adaptabilidad para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    body {
+        background-position: center top; /* Ajuste para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 50px; /* Reducir el tamaño del título en móviles */
+    }
+
+    #demo {
+        font-size: 40px; /* Reducir el tamaño del contador en móviles */
+    }
+
+    .nav-links a {
+        font-size: 20px; /* Reducir el tamaño de los enlaces en móviles */
+    }
+
+    .parrafo-proyecto {
+        font-size: 18px; /* Reducir el tamaño del texto del párrafo en móviles */
+    }
+}
+
+/* Estilos para pantallas grandes (laptops, desktops) */
+@media (min-width: 769px) {
+    body {
+        background-position: center center; /* Mantén el centro en pantallas grandes */
+    }
+}
