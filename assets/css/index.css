@@ -1,0 +1,72 @@
+body{
+    background-image: url("/assets/images/background.png");
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina márgenes para que la imagen cubra todo el viewport */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    overflow: hidden; /* Evita barras de desplazamiento si la imagen es más grande que el viewport */
+}
+
+
+
+h1{
+    color: #ffffff;
+    font-size:100px;
+    text-align:center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between; /* Distribuye los enlaces a los extremos */
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffda0b;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links .center {
+    margin: 0 auto; /* Centra el enlace en medio de los otros dos */
+}
+
+
+
+
+.parrafo-proyecto {
+    font-size: 24px; /* Tamaño del texto */
+    color: #ffffff; /* Color del texto */
+    line-height: 1.5; /* Altura de línea para mejorar legibilidad */
+    margin-top: 20px; /* Margen superior */
+    text-align:center;
+}
+
+
+#demo{
+    font-size: 80px;
+    color:red;
+    text-align: center;
+
+
+}
+
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    body {
+        background-position: center top; /* Ajuste opcional para dispositivos móviles */
+    }
+}
+
+@media (min-width: 769px) {
+    /* Estilos para pantallas grandes */
+    body {
+        background-position: center center; /* Mantén el centro en pantallas grandes */
+    }
+}
