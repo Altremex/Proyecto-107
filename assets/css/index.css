@@ -1,11 +1,11 @@
 body {
-    background-image: url("fondo.jpg");
+    background-image: url("/assets/images/fondo.jpg");
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
     background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     margin: 0; /* Elimina márgenes para que la imagen cubra todo el viewport */
     height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
-    overflow: hidden; /* Evita barras de desplazamiento si la imagen es más grande que el viewport */
+    overflow: auto; /* Evita barras de desplazamiento si la imagen es más grande que el viewport */
 }
 
 h1 {
