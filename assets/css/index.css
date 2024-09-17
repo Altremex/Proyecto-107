@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/images/fondo.jpg");
+    background-image: url("fondo.jpg");
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
     background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
