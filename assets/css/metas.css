@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    background: url("/assets/images/metas_fondo.jpg");
+    background-image: url("/assets/images/metas_fondo.jpg");
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
